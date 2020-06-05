@@ -1,0 +1,37 @@
+{
+    "name": "Epileptic Trigger Detection Extension",
+    "version": "0.1",
+    "description": "Detects images (gifs) that can trigger seizures.",
+    "permissions": [
+        "storage",
+        "declarativeContent"
+    ],
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon_16.png",
+        "32": "icon_16.png",
+        "48": "icon_16.png",
+        "128": "icon_16.png"
+    },
+//    "background": {
+//        "persistent": true,
+//        "scripts": [
+//            "background.js"
+//        ]
+//    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start",
+            "js": [
+                "libgif-modified.js",
+                "contentscript.js"
+            ]
+        }
+    ],
+    "page_action": {
+        "default_popup": "popup.html"
+    }
+}
