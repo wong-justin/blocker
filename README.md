@@ -15,7 +15,7 @@ This is not on the chrome extension store (yet?), so the above method is the onl
 ### Source Code
 [`manifest.json`](./manifest.json) is a Chrome extension file; see [Chrome extension docs.](https://developer.chrome.com/extensions/manifest)
 [`contentscript.js`](./contentscript) is executed for each tab before it loads.
-[`libgif-modified.js`](./libgif-modified.js) is slightly changed (see: lines 874-5) from [libgif](https://github.com/buzzfeed/libgif-js) for parsing GIF frames but without the onscreen player.
+[`libgif-modified.js`](./libgif-modified.js) is slightly changed from [libgif](https://github.com/buzzfeed/libgif-js) (see: lines 874-5) for parsing GIF frames but without the onscreen player.
 
 #### Algorithm
 - For every page load, continously check for gifs and replace dangerous ones.
@@ -36,4 +36,4 @@ Chrome-only extension; Firefox plugin might come sometime.
 Developed on Chrome version 83.0; use the latest version and you should be fine.
 
 ### License
-should i get one?
+MIT License
