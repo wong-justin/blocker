@@ -1,3 +1,4 @@
 *.gif
 processing-js_v1_4_8.js
-demo/
+demo/*long.gif
+demo/demo-long.mp4

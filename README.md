@@ -1,18 +1,18 @@
-### Flashing GIF Blocker
+# Flashing GIF Blocker
 Detects flashy GIFS that could trigger photosensitive epilepsy and replaces them.
 
-Current version - replaces all GIFS on page, dangerous or safe.
+Current version in progress - replaces all GIFS on page, dangerous or not.
 
-### Demo
-some link here
+## Demo
+![browsing gifs using blocker](./demo/demo.gif)
 
-### Usage
+## Usage
 Download this directory, then upload it ("load unpacked" button) to chrome://extensions (needs developer mode on).
 It will automatically operate in the backgroud of any newly loaded page.
 
 This is not on the chrome extension store (yet?), so the above method is the only way to use it for now.
 
-### Source Code
+## Source Code
 [`manifest.json`](./manifest.json) is a Chrome extension file; see [Chrome extension docs.](https://developer.chrome.com/extensions/manifest)
 [`contentscript.js`](./contentscript) is executed for each tab before it loads.
 [`libgif-modified.js`](./libgif-modified.js) is slightly changed from [libgif](https://github.com/buzzfeed/libgif-js) (see: lines 874-5) for parsing GIF frames but without the onscreen player.
@@ -30,7 +30,7 @@ This is not on the chrome extension store (yet?), so the above method is the onl
 ### Options/Settings
 not configurable yet
 
-### Compatibility
+## Compatibility
 Chrome-only extension; Firefox plugin might come sometime.
 
 Developed on Chrome version 83.0; use the latest version and you should be fine.
